@@ -1,0 +1,107 @@
+.top-content{
+    position: relative;
+}
+.top-text{
+    position: absolute;
+    left:15%;
+    top:20%;
+}
+/* top text animation */
+.top-text{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}  
+.top-text h1 {
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+.top-text span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+ .top-text span:nth-child(1) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+ .top-text span:nth-child(2) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+
+
+  figure {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+  }
+  .images figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .images figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+  /* icons */
+  .fa { 
+    padding: 5px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 12px 2px 5px 2px;
+    border-radius: 50%;
+    background: #0b3df0;
+    color: rgb(255, 255, 255);
+}  
+.fa-facebook:hover{
+    background: #4da9ff;
+    color: white;
+  }
+  
+  .fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram:hover {
+    background: #ffef12;
+    color: white;
+  }
+  
+  .fa-pinterest:hover {
+    background: #cb2027;
+    color: white;
+  }
+.icons{
+    display: inline-block;  
+}
